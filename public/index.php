@@ -19,8 +19,8 @@ define('BASE_URL', $baseUrl);
 /**
  * Mandamos la direccion de donde se situa el env para que coja los datos correctamente.
  */
-if(file_exists(__DIR__.'/../env')){
-    $dotenv = new Dotenv\Dotenv(__DIR__.'/..','env');
+if(file_exists(__DIR__.'/../.env')){
+    $dotenv = new Dotenv\Dotenv(__DIR__.'/..');
     $dotenv->load();
 }
 
