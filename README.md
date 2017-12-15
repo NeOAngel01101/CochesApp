@@ -45,26 +45,18 @@ puede preguntar directamente dudas o consejos para mejorar la pagina.
 ### Acceso
 Siempre situada en el menu superior al final a la derecha ,sin pasar de apercibido .El usuario tiene tres opciones a elegir :
 
--Loguearse.En el caso de que tenga una cuenta ,puede meterse poniendo correctamente sus credenciales.
+**_-Loguearse._**En el caso de que tenga una cuenta ,puede meterse poniendo correctamente sus credenciales.
 
--Registro.Un sencillo formulario para poder registrarse en el sitio web,teniendo asi los beneficios del mismo.
+**_-Registro._** Un sencillo formulario para poder registrarse en el sitio web,teniendo asi los beneficios del mismo.
 
--Recuperar.(No implementado) El usuario podra recuperar la contraseña en el caso de que se le haya olvidado,mediante un mensaje a su
-correo electronico.
+**_-Recuperar_** (No implementado) El usuario podra recuperar la contraseña en el caso de que se le haya olvidado,mediante un mensaje a su correo electronico.
 
 ### ¿ Una vez logueado que ?
 Felicidades ,optienes los beneficios de estar registrado.Que son :
--Añadir un coche.Te saldra en el menu esta nueva opcion,en la que podras rellenar un formulario con la finalidad de crear el coche con
-toda su informacion para despues ser vinculado al usuario (aun no implementado).
+**_-Añadir un coche._** Te saldra en el menu esta nueva opcion,en la que podras rellenar un formulario con la finalidad de crear el coche con toda su informacion para despues ser vinculado al usuario (aun no implementado).
 
--Editar un coche .¿Alguien se a equivocado poniendo que tu maravilloso renault megane tiene 70caballos de potencia cuando realmente tiene 110 UNICORNIOS? ,pues cambialo ;D .Para editar el coche lo unico que se debe hacer es irte a la pagina principal y darle al lapiz que habra salido en la zona derecha de la lista de los coches ,una vez dado te saldra el mismo formulario como el de añadir pero con todos los parametros escritos.
+**_-Editar un coche._** ¿Alguien se a equivocado poniendo que tu maravilloso renault megane tiene 70caballos de potencia cuando realmente tiene 110 UNICORNIOS? ,pues cambialo ;D .Para editar el coche lo unico que se debe hacer es irte a la pagina principal y darle al lapiz que habra salido en la zona derecha de la lista de los coches ,una vez dado te saldra el mismo formulario como el de añadir pero con todos los parametros escritos.
 
--Borrar coche.Situado como una papelera en la lista de coches al final,para si alguien a creado un falso coche y a puesto una moto ,no 
-apta en esta pagina.
-
-
-
-
-
+**_-Borrar un coche._** Situado como una papelera en la lista de coches al final,para si alguien a creado un falso coche y a puesto una moto ,no apta en esta pagina.
 
 Si estas correctamente logueado te saldra en donde ponia acceso ,tu nombre.En el cual si le das podras cerrar la sesion en logout.
