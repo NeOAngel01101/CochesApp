@@ -1,0 +1,115 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+    <div class="container">
+
+        <table class="table table-bordered">
+            <colgroup><col class="col-xs-1"><col class="col-xs-7"></colgroup>
+            <tbody>
+            <tr>
+                <img align="center" src="{{ coche.imagen }}" alt="{{ coche.imagen }}"width="600" height="300">
+                <img align="center" src="{{ coche.imagen2 }}" alt="{{ coche.imagen2 }}"width="540" height="300">
+            <tr>
+                <th> Nombre : </th> <td> {{ coche.nombre|raw }} </td>
+            </tr>
+
+            <tr>
+                <th> Tipo : </th> <td> {{ coche.tipo|raw }} </td>
+            </tr>
+
+            <tr>
+                <th> Potencia : </th> <td> {{ coche.potencia|raw }}Cv </td>
+            </tr>
+
+            <tr>
+                <th> Cilindros : </th> <td> {{ coche.cilindros|raw }} </td>
+            </tr>
+
+            <tr>
+                <th> Aceleracion : </th> <td> {{ coche.aceleracion|raw }} Seg </td>
+            </tr>
+
+            <tr>
+                <th> Par Maxima : </th> <td> {{ coche.parmaxima|raw }} </td>
+            </tr>
+
+            <tr>
+                <th> Velocidad Maxima : </th> <td> {{ coche.velocidadmaxima|raw }}Km </td>
+            </tr>
+
+            <tr>
+                <th> Turbo : </th> <td> {{ coche.turbo|raw }} </td>
+            </tr>
+
+            <tr>
+                <th> Traccion : </th> <td> {{ coche.traccion|raw }} </td>
+            </tr>
+
+            <tr>
+                <th> Marca : </th> <td> {{ coche.marca|raw }} </td>
+            </tr>
+
+            <tr>
+                <th> Año : </th> <td> {{ coche.year|raw }} </td>
+            </tr>
+
+            <tr>
+                <th> Precio : </th> <td> {{ coche.precio|raw }} Euros </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+            <div class="row data">
+                <div class="col-lg-12">
+                    <form class="form-comment" method="POST" action="">
+                        <h2 class="form-comment-heading" align="center">Deja tu Comentario</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group  {%  if errors['name'] %}has-error{% endif %}">
+                                    <label for="inputName">Nombre</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre de usuario" value="">
+                                </div>
+                                {{ generateAlert(errors, 'name') }}
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group  {%  if errors['email'] %}has-error{% endif %}">
+                                    <label for="inputName">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="email" value="">
+                                </div>
+                                {{ generateAlert(errors, 'email') }}
+                            </div>
+                        </div>
+
+                        <div class="form-group {% if errors['comment'] %}has-error{% endif %}">
+                            <label for="inputDescription">Comentario</label>
+                            <textarea class="form-control" name="comment" id="comment" rows="5"></textarea>
+                        </div>
+                        {{ generateAlert(errors, 'comment') }}
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Añadir Comentario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <h2>Opiniones de los usuarios</h2>
+            {% if comments|length == 0 %}
+                <h4>Todavía no hay comentarios</h4>
+            {% else %}
+                {% for comment in comments %}
+                    <h4>Según {{ comment.user }}:</h4>
+                    <p>{{ comment.text }}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+{% endblock %}
+

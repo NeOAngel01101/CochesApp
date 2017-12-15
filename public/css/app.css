@@ -1,0 +1,201 @@
+body{
+    padding-top: 70px;
+    color: white;
+    background: url("fondo.png") no-repeat;
+    background-size: cover;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: black;
+}
+
+.container_contacto div{
+    color:black;
+}
+
+.editar {
+    color: blue;
+}
+.borrar {
+    color: red;
+}
+
+.title h1 {
+    margin-top: 0px;
+
+}
+
+
+.data {
+    margin: 5px;
+}
+/* Estilos para el autocomplete */
+
+.tt-query {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999
+}
+
+.tt-menu {    /* used to be tt-dropdown-menu in older versions */
+    width: 322px;
+    margin-top: 4px;
+    padding: 4px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    line-height: 24px;
+}
+
+
+.tt-suggestion.tt-cursor,.tt-suggestion:hover {
+    color: #fff;
+    background-color: #0097cf;
+
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+
+
+#game{
+    background:#151515;
+    overflow:hidden;
+    text-align:center;
+    font-family:'Viga',
+    sans-serif;
+    color:#FFF;
+}
+
+.h1_404{
+    font-size:128px;
+    margin:0px auto;
+    display:block;
+    color:#FFF;
+    animation:h1_404 1s infinite linear;
+}
+
+.p_404{
+    font-size:18px;
+    padding:8px 16px;
+    margin:11% auto 5% auto;
+    background:rgba(0,0,0,0.5);
+    display:inline-block;
+}
+
+#game{
+    background:url(https://image.ibb.co/c7Ce5F/beauty_of_an_open_road.jpg) center  no-repeat;
+    background-size:cover;
+    width:100%;
+    height:100%;
+    position:fixed;
+}
+#game:after{
+    content:'';
+    width:64px;
+    height:64px;
+    position:absolute;
+    background:#111;
+    border-radius:50%;
+    box-shadow:0 0 10px #000 inset;
+    top:50%;
+    margin-top:-32px;
+    right:-72px;
+}
+#game:before{
+    content:'';
+    width:24px;
+    height:128px;
+    position:absolute;
+    background:#111;
+    border-radius:12px;
+    box-shadow:0 0 10px #000 inset;
+    top:50%;
+    margin-top:-64px;
+    left:-50px;
+}
+
+#car{
+    width:350px;
+    height:200px;
+    display:block;
+    position:absolute;
+    left:50%;
+    bottom:0px;
+    margin-left:-150px;
+    background:url(http://pictures.dealer.com/f/ferrariofnewengland/1375/02c9b56522a6966289dc07a579be55e5x.jpg) center center no-repeat;
+    background-size:cover;
+    z-index:1;
+    animation: araba 1s infinite;
+}
+
+@keyframes araba{
+    0%{top:calc(100% - 295px); margin-left:-175px;}
+    25%{top:calc(100% - 298px); margin-left:-174px;}
+    50%{top:calc(100% - 300px); margin-left:-175px;}
+    75%{top:calc(100% - 298px); margin-left:-174px;}
+    100%{top:calc(100% - 295px); margin-left:-175px;}
+}
+.yol_cizgisi{width:32px; height:43%; position:absolute; bottom:0; left:50%; margin-left:-30px; overflow:hidden;}
+.yol_cizgisi:after{
+    content:'';
+    width:10px; height:100%; border-left:18px dashed #DDD; position:absolute; left:50%; margin-left:-5px; bottom:0; animation:yol 0.5s infinite linear; -webkit-filter:blur(2px);
+}
+@keyframes yol{
+    from{bottom:55%;}
+    to{bottom:0%;}
+}
+
+@keyframes h1_404{
+    0%{text-shadow:0 0 10px #F33;}
+    50%{text-shadow:0 0 50px #333;}
+    100%{text-shadow:0 0 10px #F33;}
+}
+
+.container_login,.container_register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+    width:300px;
+    height:300px;
+}
+
+.container_login input,.container_register input {
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(0,0,0,0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+.container_login input:focus,.container_register input:focus {
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
+}
+

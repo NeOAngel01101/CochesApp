@@ -1,0 +1,129 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+<div class="container">
+    <h1 align="center">{{ webInfo.h1 }} {{ coche.nombre }}</h1>
+    <form method="post">
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group  {%  if errors['nombre'] %}has-error{% endif %}">
+                <label for="nombre">Nompre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre del coche" value="{{ coche.nombre }}">
+            </div>
+            {{ generateAlert(errors, 'nombre') }}
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group  {%  if errors['tipo'] %}has-error{% endif %}">
+                <label for="tipo">Tipo</label>
+                {{ generateSelect(tipo, coche['tipo'], 'tipo', false) }}
+            </div>
+            {{ generateAlert(errors, 'tipo') }}
+        </div>
+    </div>
+
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="text" class="form-control" id="imagen" name="imagen" placeholder="Imagen del coche URL" value="{{ coche.imagen }}">
+        </div>
+
+        <div class="form-group">
+            <label for="imagen2">Segunda Imagen</label>
+            <input type="text" class="form-control" id="imagen2" name="imagen2" placeholder="Segunda Imagen del coche URL" value="{{ coche.imagen2 }}">
+        </div>
+
+     <div class="row">
+         <div class="col-lg-6">
+             <div class="form-group  {%  if errors['potencia'] %}has-error{% endif %}">
+                <label for="potencia">Potencia</label>
+                <input type="text" class="form-control" id="potencia" name="potencia" value="{{ coche.potencia }}">
+            </div>
+            {{ generateAlert(errors, 'potencia') }}
+         </div>
+
+         <div class="col-lg-3">
+             <div class="form-group  {%  if errors['cilindros'] %}has-error{% endif %}">
+                <label for="cilindros">Cilindros</label>
+                 {{ generateSelect(cilindros, coche['cilindros'], 'cilindros', false) }}
+            </div>
+            {{ generateAlert(errors, 'cilindros') }}
+         </div>
+
+         <div class="col-lg-3">
+         <div class="form-group  {%  if errors['aceleracion'] %}has-error{% endif %}">
+            <label for="aceleracion">Aceleracion</label>
+            <input type="text" class="form-control" id="aceleracion" name="aceleracion" value="{{ coche.aceleracion }}">
+        </div>
+        {{ generateAlert(errors, 'aceleracion') }}
+         </div>
+     </div>
+
+     <div class="row">
+         <div class="col-lg-6">
+            <div class="form-group{%  if errors['parmaxima'] %}has-error{% endif %}">
+                <label for="parmaxima">Par maxima</label>
+                <input type="text" class="form-control" id="parmaxima" name="parmaxima" value="{{ coche.parmaxima }}">
+            </div>
+            {{ generateAlert(errors, 'parmaxima') }}
+         </div>
+
+         <div class="col-lg-3">
+            <div class="form-group{%  if errors['velocidadmaxima'] %}has-error{% endif %}">
+                <label for="velocidadmaxima">Velocidad Maxima</label>
+                <input type="text" class="form-control" id="velocidadmaxima" name="velocidadmaxima" value="{{ coche.velocidadmaxima }}">
+            </div>
+            {{ generateAlert(errors, 'velocidadmaxima') }}
+         </div>
+
+         <div class="col-lg-3">
+            <div class="form-group{%  if errors['turbo'] %}has-error{% endif %}">
+                <label for="turbo">Turbo</label>
+                {{ generateSelect(turbo, coche['turbo'], 'turbo', false) }}
+            </div>
+            {{ generateAlert(errors, 'turbo') }}
+         </div>
+     </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group{%  if errors['traccion'] %}has-error{% endif %}">
+                <label for="traccion">Traccion</label>
+                {{ generateSelect(traccion, coche['traccion'], 'traccion', false) }}
+            </div>
+            {{ generateAlert(errors, 'traccion') }}
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group{%  if errors['marca'] %}has-error{% endif %}">
+                <label for="marca">Marca</label>
+                {{ generateSelect(marca, coche['marca'], 'marca', false) }}
+            </div>
+            {{ generateAlert(errors, 'marca') }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group{%  if errors['year'] %}has-error{% endif %}">
+                <label for="year">Año de creacion</label>
+                <input type="date" class="form-control" id="year" name="year" value="{{ coche.year }}">
+            </div>
+            {{ generateAlert(errors, 'year') }}
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group{%  if errors['precio'] %}has-error{% endif %}">
+            <label for="precio">Precio</label>
+            <input type="text" class="form-control" id="precio" name="precio" value="{{ coche.precio }}">
+            </div>
+        {{ generateAlert(errors, 'precio') }}
+        </div>
+    </div>
+
+        <input type="hidden" name="_method" value="{{ webInfo.method }}">
+        <button type="submit" class="btn btn-default">{{ webInfo.submit }}</button>
+    </form>
+</div><!-- /.container -->
+{% endblock %}
+
