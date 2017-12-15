@@ -42,7 +42,7 @@ para que los usuarios logueados o no ,pongan sus dudas,o reclamaciones por algun
 -En el menu superior podemos ver que hay una zona de contacto,en la cual pone la ruta de la "empresa",y una zona donde cualquier usuario
 puede preguntar directamente dudas o consejos para mejorar la pagina.
 
-### Acceso
+## Acceso
 Siempre situada en el menu superior al final a la derecha ,sin pasar de apercibido .El usuario tiene tres opciones a elegir :
 
 **_-Loguearse._** En el caso de que tenga una cuenta ,puede meterse poniendo correctamente sus credenciales.
@@ -51,7 +51,7 @@ Siempre situada en el menu superior al final a la derecha ,sin pasar de apercibi
 
 **_-Recuperar_** (No implementado) El usuario podra recuperar la contraseña en el caso de que se le haya olvidado,mediante un mensaje a su correo electronico.
 
-### ¿ Una vez logueado que ?
+## ¿ Una vez logueado que ?
 Felicidades ,optienes los beneficios de estar registrado.Que son :
 
 **_-Añadir un coche._** Te saldra en el menu esta nueva opcion,en la que podras rellenar un formulario con la finalidad de crear el coche con toda su informacion para despues ser vinculado al usuario (aun no implementado).
